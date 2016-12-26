@@ -1,3 +1,4 @@
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -14,9 +15,10 @@
  *= require_self
  */
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
 
+//goole fonts
 h1, h2, h3 {
   font-family: "Open Sans", "sans-serif"
 }
@@ -27,9 +29,16 @@ background: #000428; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #000428 , #004e92); /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #000428 , #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 color: white;
-
   }   
+ 
+ //blend nav with body background 
+.homeCallout {
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}  
 
+//navbar background blend no border
 .navbar {
   border: none;
 }
@@ -37,17 +46,11 @@ color: white;
 //brand color, & links color
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
   color: white;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
 
-//hover for brand color, & links color
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: white;
-  opacity: 0.75;
-}
 
-.homeCallout {
-  margin-top: -20px;
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
 
