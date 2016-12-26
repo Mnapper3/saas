@@ -15,6 +15,3 @@
 //= require turbolinks
 //= require_tree .
 
-    $('#myCarousel').carousel({
-        pause: 'none'
-	})
