@@ -23,11 +23,14 @@ h1, h2, h3 {
 
 body, .navbar{
   //graident provided by: _ighosh @ uigraidents.com
-  background: #ff4b1f; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #ff4b1f , #1fddff); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #ff4b1f , #1fddff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+background: #000428; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #000428 , #004e92); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #000428 , #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }   
 
 .navbar {
   border: none;
 }
+
