@@ -32,6 +32,7 @@ gem 'jbuilder', '2.5.0'
 #twitter bootstrao library
 gem 'bootstrap-sass', '3.3.7'
 gem 'hirb', '0.7.3'
+gem 'devise', '4.2.0'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
