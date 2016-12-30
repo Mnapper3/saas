@@ -1,4 +1,25 @@
-<div class="homeCallout text-center container-fluid">
+<div class="homeCallout text-center fluid-container">
   <h1>Welcome to DevMatch</h1>
   <h3>A membership site were entrepreneurs can meet developers</h3>
 </div>
+
+  <div class="container home_sign_up_links">
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <div class="well">
+          <h2>Basic Membership Plan</h2>
+          <h4>Sign up and get free basic access to the community.</h4>
+          <br>
+          <%= link_to "Sign Up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+      </div>
+      </div>
+      
+      <div class="col-md-6 text-center">
+        <div class="well">
+          <h2>Pro Membership Plan</h2>
+          <h4>Sign Up for the Pro account for $10/month and get access the community and contact information.</h4>
+          <%= link_to "Sign Up with Pro Plan", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+      </div>
+      </div>
+    </div>
+  </div>
