@@ -3,7 +3,7 @@
 // Document ready
 $(document).on('turbolinks:load', function(){
   var theForm = $('#pro_form');
-  var submitBtn = $('#form-submit-btn');
+  var submitBtn = $('#form-signup-btn');
 // Set our Stripe public key
   Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content') );
 // When users clicks submit button we''l prevent it from submitting and collect credit card fields, 
