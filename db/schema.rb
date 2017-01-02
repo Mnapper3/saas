@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20170101091649) do
     t.string  "job_title"
     t.string  "phone_number"
     t.string  "contact_email"
-    t.text    "descriptiom"
+    t.text    "description"
   end
 
   create_table "users", force: :cascade do |t|
