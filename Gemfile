@@ -36,7 +36,7 @@ gem 'devise', '4.2.0'
 gem 'stripe', '1.48.0'
 gem 'figaro', '1.1.1'
 gem 'paperclip'
-gem 'aws-sdk', '~> 2.3'
+gem 'aws-sdk', '~> 2'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
