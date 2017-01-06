@@ -7,6 +7,11 @@ class User < ApplicationRecord
   belongs_to :plan
   has_one :profile
   
+  has_attached_file  :photo,
+                     :storage => :s3, 
+                     :s3_credentials => "#{Rails.root}/config/s3.yml",
+                     :path => "user/:attachment/:style/:id.:extension"
+  
   attr_accessor :stripe_card_token
   def save_with_subscription
     if valid?
